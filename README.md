@@ -1,4 +1,4 @@
-#  RailSaarthi
+#  Rail Saarthi
 ### Autonomous AI Co-Pilot for Railway Operations Intelligence
 
 > Built for **FAR AWAY 2026** — India's Biggest International Hackathon
