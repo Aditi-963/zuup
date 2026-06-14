@@ -1,4 +1,4 @@
-# 🚆 RailSaarthi
+#  RailSaarthi
 ### Autonomous AI Co-Pilot for Railway Operations Intelligence
 
 > Built for **FAR AWAY 2026** — India's Biggest International Hackathon
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 What is RailSaarthi?
+##  What is RailSaarthi?
 
 RailSaarthi is an autonomous AI-powered operational intelligence system for modern railway infrastructure. It acts as a real-time co-pilot for station masters and operational control rooms — enabling faster, safer, and smarter decisions during disruptions like train delays, platform conflicts, crowd congestion, and emergencies.
 
@@ -17,7 +17,7 @@ Unlike traditional railway software that simply displays information, RailSaarth
 
 ---
 
-## 🎯 The Problem
+##  The Problem
 
 Indian Railways handles **23+ million passengers daily** across **8,700+ stations**. When operational disruptions occur, the current workflow is almost entirely manual:
 
@@ -46,7 +46,7 @@ Existing software (ticket booking, train tracking, scheduling dashboards) answer
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 When a disruption is detected, RailSaarthi automatically:
 
@@ -62,7 +62,7 @@ All within approximately **90 seconds**, down from the current 18–30 minute ma
 
 ---
 
-## 🤖 Why This Is Truly Agentic
+##  Why This Is Truly Agentic
 
 Most AI projects built at hackathons are reactive — a user asks a question, the AI responds. RailSaarthi is fundamentally different:
 
@@ -78,7 +78,7 @@ The system acts **proactively before the operator asks**. This is genuine agenti
 
 ---
 
-## 🧠 Multi-Agent Architecture
+##  Multi-Agent Architecture
 
 RailSaarthi is built around five specialized autonomous agents, each owning a distinct part of the operational recovery pipeline:
 
@@ -112,7 +112,7 @@ Decision logged in audit system
 
 ---
 
-## 🖥 Key Features
+##  Key Features
 
 - **Real-Time Operations Dashboard** — Monitor active trains, live delays, platform status, and station alerts
 - **Delay Cascade Detector** — Automatically surfaces all trains affected by a single disruption
@@ -125,7 +125,7 @@ Decision logged in audit system
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - Next.js 15, React 19, TypeScript
@@ -146,7 +146,7 @@ Decision logged in audit system
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -188,7 +188,7 @@ App runs at `http://localhost:3000`.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 railsaarthi/
@@ -213,7 +213,7 @@ railsaarthi/
 
 ---
 
-## 📊 Impact at Scale
+##  Impact at Scale
 
 | Metric | Current State | With RailSaarthi |
 |---|---|---|
@@ -225,7 +225,7 @@ railsaarthi/
 
 ---
 
-## 🔮 Future Scope
+##  Future Scope
 
 - **IoT Platform Sensors** — Real-time crowd density detection via hardware nodes
 - **Edge Devices** — ESP32-based station hardware for offline operational resilience
@@ -237,7 +237,7 @@ The architecture is not railway-specific — it is a generalized operational int
 
 ---
 
-## 👥 Team Elaris
+##  Team Elaris
 
 Built by five engineering students from **Parul University, Vadodara**, who approached this hackathon as a product engineering team rather than as a student submission — with clear domain ownership, parallel workstreams, and production-level thinking throughout.
 
@@ -251,7 +251,7 @@ Built by five engineering students from **Parul University, Vadodara**, who appr
 
 ---
 
-## 🌍 Vision
+##  Vision
 
 Most railway technology today informs operators. RailSaarthi thinks alongside them.
 
