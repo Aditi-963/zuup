@@ -1,6 +1,6 @@
 # 🚂 RailSaarthi — Agentic Co-Pilot for Indian Railways
 
-> **FAR AWAY Hackathon 2025** · Themes: Railways + Agentic AI Systems
+> **FAR AWAY Hackathon 2026** · Themes: Railways + Agentic AI Systems
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20App-orange?style=for-the-badge)](./index.html)
 [![Theme](https://img.shields.io/badge/Theme-Railways%20%2B%20Agentic%20AI-blue?style=for-the-badge)]()
@@ -146,7 +146,7 @@ open index.html
 
 ## 👥 Team
 
-Built for FAR AWAY — India's Biggest International Hackathon 2025.
+Built for FAR AWAY — India's Biggest International Hackathon 2026.
 
 **Themes covered:** Railways · Agentic & Autonomous Systems
 
