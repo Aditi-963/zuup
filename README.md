@@ -1,4 +1,4 @@
-#  Rail Saarthi
+#  RailSaarthi
 ### Autonomous AI Co-Pilot for Railway Operations Intelligence
 
 > Built for **FAR AWAY 2026** — India's Biggest International Hackathon
@@ -244,9 +244,9 @@ Built by five engineering students from **Parul University, Vadodara**, who appr
 | Name | Role | Focus |
 |---|---|---|
 | **Aditi Rajput** | Product Lead · AI Systems Architect | Problem framing, multi-agent architecture design, product strategy, technical documentation |
+| **Pranjal Gupta** | AI Engineering Lead | Simulation engine, delay detection logic, cascade analysis, decision pipeline |
 | **Vaidehi Wate** | Frontend Engineering Lead · UI/UX | Next.js application, dashboard design, component system, Framer Motion animations |
 | **Hiranya Raut** | Backend Systems Engineer | FastAPI architecture, REST APIs, database schema, JWT authentication |
-| **Pranjal Gupta** | AI Engineering Lead | Simulation engine, delay detection logic, cascade analysis, decision pipeline |
 | **Katyayni Sharma** | Research Engineer · Documentation Lead | Railway domain research, competitor analysis, IoT roadmap, hardware architecture planning |
 
 ---
