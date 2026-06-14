@@ -1,157 +1,266 @@
-#  RailSaarthi — Agentic Co-Pilot for Indian Railways
+# 🚆 RailSaarthi
+### Autonomous AI Co-Pilot for Railway Operations Intelligence
 
-> **FAR AWAY Hackathon 2026** · Themes: Railways + Agentic AI Systems
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20App-orange?style=for-the-badge)](./index.html)
-[![Theme](https://img.shields.io/badge/Theme-Railways%20%2B%20Agentic%20AI-blue?style=for-the-badge)]()
-[![Language](https://img.shields.io/badge/Languages-11%20Indian%20Languages-green?style=for-the-badge)]()
+> Built for **FAR AWAY 2026** — India's Biggest International Hackathon
+> Themes: **Railways · Agentic & Autonomous Systems**
 
 ---
 
-##  The Problem
+## 📌 What is RailSaarthi?
 
-Indian Railways moves **23 million passengers daily** across **8,702 stations**. When one train is delayed, station masters must manually:
-- Calculate which other trains are affected
-- Decide platform reallocations (currently done by intuition)
-- Generate multilingual announcements
-- Coordinate staff across departments
+RailSaarthi is an autonomous AI-powered operational intelligence system for modern railway infrastructure. It acts as a real-time co-pilot for station masters and operational control rooms — enabling faster, safer, and smarter decisions during disruptions like train delays, platform conflicts, crowd congestion, and emergencies.
 
-**This takes 18–30 minutes. A single wrong decision ripples across 10 trains.**
+Unlike traditional railway software that simply displays information, RailSaarthi **actively detects disruptions, predicts cascading failures, recommends recovery strategies, generates multilingual announcements, and coordinates staff responses — all within 90 seconds.**
 
-No existing technology solves this. Google Maps, IRCTC, and railway apps handle information retrieval — none handle autonomous decision-making during disruptions.
+> **RailSaarthi is not a passenger app.**
+> It is infrastructure intelligence software for one of the world's largest transportation systems.
 
 ---
 
-##  The Solution: RailSaarthi
+## 🎯 The Problem
 
-An **agentic AI co-pilot** that detects delay cascades, plans platform reallocations, and sends multilingual staff alerts — all within 90 seconds of detection, without waiting to be asked.
+Indian Railways handles **23+ million passengers daily** across **8,700+ stations**. When operational disruptions occur, the current workflow is almost entirely manual:
 
-### Three Core Capabilities
+```
+Train delayed
+→ Station master manually checks schedule dependencies
+→ Operator identifies affected trains
+→ Platform conflicts assessed manually
+→ Crowd risk increases while decisions are delayed
+→ Announcements coordinated by hand
+→ Staff across departments communicate manually
+→ Recovery takes 18–30 minutes
+```
 
-| Capability | What it does | Tech |
+This manual process leads to:
+
+- **Cascading failures** — one delayed train disrupts several downstream trains
+- **Platform congestion** — dangerous crowd buildup from unexpected delays
+- **Human error** — manual decisions made under time pressure
+- **Delayed communication** — passengers receive announcements too late
+- **Multilingual gaps** — critical information not reaching passengers in their regional language
+
+Existing software (ticket booking, train tracking, scheduling dashboards) answers *"Where is my train?"* — not *"Which trains are affected downstream, what do I reassign, and what do I announce right now?"*
+
+**That operational gap is what RailSaarthi fills.**
+
+---
+
+## 💡 Our Solution
+
+When a disruption is detected, RailSaarthi automatically:
+
+1. **Detects** the disruption in real time
+2. **Identifies** all downstream trains affected via dependency graph analysis
+3. **Predicts** platform conflicts and congestion risks
+4. **Recommends** optimal platform reallocation strategies
+5. **Generates** multilingual passenger announcements and staff alerts
+6. **Logs** every AI decision for audit and accountability
+7. **Requests human approval** before executing — operators remain in control at all times
+
+All within approximately **90 seconds**, down from the current 18–30 minute manual process.
+
+---
+
+## 🤖 Why This Is Truly Agentic
+
+Most AI projects built at hackathons are reactive — a user asks a question, the AI responds. RailSaarthi is fundamentally different:
+
+| Reactive AI | RailSaarthi |
+|---|---|
+| Waits for user input | Detects events autonomously |
+| Responds to questions | Predicts downstream consequences |
+| Generates output | Recommends and executes recovery plans |
+| Single model call | Multi-agent orchestration pipeline |
+| Answers "what happened?" | Answers "what should we do next?" |
+
+The system acts **proactively before the operator asks**. This is genuine agentic behavior, and it directly aligns with the *Agentic & Autonomous Systems* hackathon theme.
+
+---
+
+## 🧠 Multi-Agent Architecture
+
+RailSaarthi is built around five specialized autonomous agents, each owning a distinct part of the operational recovery pipeline:
+
+| Agent | Purpose | Output |
 |---|---|---|
-|  **Cascade Detector** | Automatically identifies all downstream trains affected by a delay | Claude API + Timetable data |
-|  **Platform Reallocator** | Generates optimal swap plans with ranked reasoning | Constraint solving + LLM reasoning |
-|  **Multilingual Alerts** | PA announcements in Hindi, Marathi, Telugu + 8 more languages | Google Translate + Twilio |
+| **Delay Detection Agent** | Detects disruptions in real time from train ETA data | Delay severity classification |
+| **Cascade Analysis Agent** | Maps downstream train dependencies via graph analysis | List of affected trains |
+| **Platform Optimization Agent** | Recommends optimal platform reassignment | Platform swap recommendations |
+| **Crowd Risk Agent** | Estimates passenger congestion from delay + occupancy data | Risk classification |
+| **Communication Agent** | Generates announcements and staff alerts in 6 languages | Multilingual operational comms |
 
-### Why This Is Genuinely Agentic
-
-The system **does not wait to be asked**. When a delay is detected:
-1. Agent fires automatically
-2. Calculates cascade impact
-3. Proposes a recovery plan
-4. Generates Hindi/regional announcements
-5. Logs decision to audit trail
-
-The station master sees a plan and accepts or overrides it. **That's autonomy.**
-
----
-
-##  Demo Scenarios
-
-### Demo 1: Single Train Delay
-Click "Fire Delay: Deccan Express +47 min" → Watch the AI agent detect the cascade, propose a platform swap (Platform 2 → 5), generate a Hindi announcement, and log the decision.
-
-### Demo 2: Crowd Emergency
-Click "Crowd Alert: Platform 3" → Agent generates a crowd management plan with RPF deployment instructions and PA broadcast text.
-
-### Demo 3: Multi-Train Cascade
-Click "Multi-Train Cascade" → Agent handles 2 simultaneous delays and generates a prioritized multi-platform recovery plan.
-
-### Demo 4: Emergency Chat
-Go to Emergency AI → Type any emergency in any language → Get AI-powered, context-aware railway assistance.
-
----
-
-## 🛠️ Tech Stack
+### Autonomous Pipeline
 
 ```
-Frontend:    HTML5 + Vanilla JS (zero dependencies — runs anywhere)
-AI Engine:   Claude claude-sonnet-4-6 (Anthropic API)
-Languages:   Hindi, Marathi, Telugu, Tamil, Bengali, Gujarati + 5 more
-Backend:     FastAPI (Python) — see /backend
-Database:    SQLite (audit log)
-Alerts:      Twilio WhatsApp API (production)
-Data:        IRCTC API mock (production: live IRCTC integration)
-```
-
-### The Core AI Prompt
-
-```python
-SYSTEM_PROMPT = """
-You are RailSaarthi, an agentic AI assistant for Indian railway station masters.
-You receive live train delay data and must:
-1. Identify all downstream trains affected by the delay cascade
-2. Suggest optimal platform reallocations with specific reasoning
-3. Estimate crowd flow impact
-4. Generate a staff alert in Hindi
-
-Respond only in JSON format:
-{
-  "affected_trains": [...],
-  "suggested_swaps": [{"train": "", "from_platform": N, "to_platform": N, "reason": ""}],
-  "crowd_alert_level": "LOW|MEDIUM|HIGH",
-  "hindi_announcement": "...",
-  "confidence": "HIGH|MEDIUM",
-  "estimated_recovery_mins": N
-}
-"""
+Disruption detected
+    ↓
+Delay Detection Agent activates
+    ↓
+Cascade Analysis Agent identifies affected trains
+    ↓
+Platform Optimization Agent calculates recovery strategy
+    ↓
+Crowd Risk Agent predicts congestion impact
+    ↓
+Communication Agent generates multilingual announcements
+    ↓
+Station Master reviews → approves or overrides
+    ↓
+Decision logged in audit system
 ```
 
 ---
 
-##  Running Locally
+## 🖥 Key Features
 
-### Option A: Just open index.html
-The frontend is a single HTML file with no dependencies. Open `index.html` in any browser. The AI features require the Anthropic API key (automatically handled in the deployed version).
+- **Real-Time Operations Dashboard** — Monitor active trains, live delays, platform status, and station alerts
+- **Delay Cascade Detector** — Automatically surfaces all trains affected by a single disruption
+- **Platform Optimization Engine** — AI-recommended reallocation to minimize delay propagation and passenger impact
+- **Multilingual Announcement Generator** — Passenger announcements in English, Hindi, Marathi, Tamil, Gujarati, and Telugu
+- **Emergency AI Assistant** — Coordinated response handling for medical emergencies, crowd surge, smoke detection, and track incidents
+- **Disruption Simulation Engine** — Interactive sandbox to simulate and stress-test operational scenarios
+- **Audit Log** — Immutable decision history for post-incident review and regulatory accountability
+- **Human Override System** — Every AI recommendation requires operator approval; humans stay in final control
 
-### Option B: Full Backend
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js 15, React 19, TypeScript
+- Tailwind CSS, shadcn/ui, Framer Motion
+- Zustand (state management), Recharts (data visualization)
+
+### Backend
+- Python, FastAPI, Pydantic
+- SQLAlchemy, SQLite (dev) / PostgreSQL (production-ready)
+
+### AI Layer
+- **Claude (Anthropic)** — Powers multi-agent reasoning, cascade analysis, optimization logic, and multilingual communication generation
+- Multi-agent orchestration pipeline with specialized, isolated agent roles
+- Structured output parsing for deterministic operational recommendations
+
+### Infrastructure
+- REST APIs, Docker, modular service architecture, environment-based configuration
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Docker (optional)
+
+### 1. Clone the repository
 ```bash
-# Install dependencies
-pip install fastapi uvicorn httpx
+git clone https://github.com/<your-org>/railsaarthi.git
+cd railsaarthi
+```
 
-# Set API key
-export ANTHROPIC_API_KEY=your_key_here
+### 2. Configure environment variables
+```bash
+cp .env.example .env
+```
 
-# Run backend
+Fill in `.env`:
+```env
+ANTHROPIC_API_KEY=your_key_here
+DATABASE_URL=sqlite:///./railsaarthi.db   # or your PostgreSQL URL
+```
+
+### 3. Start the backend
+```bash
 cd backend
-python main.py
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-# Open frontend
-open index.html
+### 4. Start the frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+App runs at `http://localhost:3000`.
+
+---
+
+## 📁 Project Structure
+
+```
+railsaarthi/
+├── frontend/                   # Next.js 15 application
+│   ├── app/                    # App router pages
+│   ├── components/             # Reusable UI components (shadcn/ui)
+│   └── store/                  # Zustand state management
+├── backend/                    # FastAPI application
+│   ├── agents/                 # Autonomous AI agents
+│   │   ├── delay_detection.py
+│   │   ├── cascade_analysis.py
+│   │   ├── platform_optimization.py
+│   │   ├── crowd_risk.py
+│   │   └── communication.py
+│   ├── models/                 # SQLAlchemy database models
+│   ├── api/                    # REST API route handlers
+│   └── main.py
+├── docker-compose.yml
+├── .env.example
+└── README.md
 ```
 
 ---
 
-##  Impact Numbers
+## 📊 Impact at Scale
 
-- **90 seconds** — delay detection to recovery plan (vs 18–30 min manual)
-- **₹18,000 Crore** — annual railway delay cost addressable
-- **23 million** — daily passengers impacted by delays
-- **11 languages** — regional language support
-- **8,702 stations** — potential deployment scale
-
----
-
-##  Roadmap
-
-| Phase | Timeline | Milestone |
+| Metric | Current State | With RailSaarthi |
 |---|---|---|
-| **MVP** | Hackathon | Simulated data, AI cascade detection, Hindi alerts |
-| **Pilot** | 3 months | Live IRCTC API, WhatsApp alerts, 5 pilot stations |
-| **National** | 12 months | 100 major junctions, Ministry partnership |
-| **BRICS** | 2 years | China, Russia, Brazil rail networks |
+| Disruption recovery time | 18–30 minutes | ~90 seconds |
+| Announcement languages | Varies by station | 6 Indian languages |
+| Decision audit trail | Manual / incomplete | Fully automated |
+| Deployment potential | — | 8,700+ stations |
+| Passengers impacted daily | 23M+ | 23M+ |
 
 ---
 
-##  Team
+## 🔮 Future Scope
 
-Built for FAR AWAY — India's Biggest International Hackathon 2026.
+- **IoT Platform Sensors** — Real-time crowd density detection via hardware nodes
+- **Edge Devices** — ESP32-based station hardware for offline operational resilience
+- **Smart PA Integration** — AI-triggered autonomous physical announcement systems
+- **National Pilot** — Deployment across major junction stations
+- **Broader Sectors** — Metro systems (Delhi, Mumbai, Bengaluru), airports, large-scale logistics hubs
 
-**Themes covered:** Railways · Agentic & Autonomous Systems
+The architecture is not railway-specific — it is a generalized operational intelligence framework that can be adapted for any large-scale transportation or logistics system.
 
 ---
 
-## 📄 License
+## 👥 Team Elaris
 
-MIT License — free to use, fork, and deploy.
+Built by five engineering students from **Parul University, Vadodara**, who approached this hackathon as a product engineering team rather than as a student submission — with clear domain ownership, parallel workstreams, and production-level thinking throughout.
+
+| Name | Role | Focus |
+|---|---|---|
+| **Aditi Rajput** | Product Lead · AI Systems Architect | Problem framing, multi-agent architecture design, product strategy, technical documentation |
+| **Vaidehi Wate** | Frontend Engineering Lead · UI/UX | Next.js application, dashboard design, component system, Framer Motion animations |
+| **Hiranya Raut** | Backend Systems Engineer | FastAPI architecture, REST APIs, database schema, JWT authentication |
+| **Pranjal Gupta** | AI Engineering Lead | Simulation engine, delay detection logic, cascade analysis, decision pipeline |
+| **Katyayni Sharma** | Research Engineer · Documentation Lead | Railway domain research, competitor analysis, IoT roadmap, hardware architecture planning |
+
+---
+
+## 🌍 Vision
+
+Most railway technology today informs operators. RailSaarthi thinks alongside them.
+
+We deliberately chose not to build another ticket booking app, another chatbot wrapper, or another passenger-facing product. We chose one of the hardest engineering problems available within these hackathon themes: bringing genuine autonomous decision intelligence into the operational layer of one of the world's largest transportation networks.
+
+RailSaarthi is designed to be deployable — not just demonstrable. The architecture is modular, the backend is scalable, and the human-in-the-loop approval system ensures safety at every step.
+
+> *We are not building software for passengers. We are building the operational brain for future railway systems.*
+
+---
+
+*Team Elaris · FAR AWAY 2026 · Parul University, Vadodara*
