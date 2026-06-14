@@ -1,4 +1,4 @@
-# 🚂 RailSaarthi — Agentic Co-Pilot for Indian Railways
+#  RailSaarthi — Agentic Co-Pilot for Indian Railways
 
 > **FAR AWAY Hackathon 2026** · Themes: Railways + Agentic AI Systems
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 The Problem
+##  The Problem
 
 Indian Railways moves **23 million passengers daily** across **8,702 stations**. When one train is delayed, station masters must manually:
 - Calculate which other trains are affected
@@ -22,7 +22,7 @@ No existing technology solves this. Google Maps, IRCTC, and railway apps handle 
 
 ---
 
-## 🤖 The Solution: RailSaarthi
+##  The Solution: RailSaarthi
 
 An **agentic AI co-pilot** that detects delay cascades, plans platform reallocations, and sends multilingual staff alerts — all within 90 seconds of detection, without waiting to be asked.
 
@@ -30,9 +30,9 @@ An **agentic AI co-pilot** that detects delay cascades, plans platform reallocat
 
 | Capability | What it does | Tech |
 |---|---|---|
-| 🔍 **Cascade Detector** | Automatically identifies all downstream trains affected by a delay | Claude API + Timetable data |
-| 🏛️ **Platform Reallocator** | Generates optimal swap plans with ranked reasoning | Constraint solving + LLM reasoning |
-| 📢 **Multilingual Alerts** | PA announcements in Hindi, Marathi, Telugu + 8 more languages | Google Translate + Twilio |
+|  **Cascade Detector** | Automatically identifies all downstream trains affected by a delay | Claude API + Timetable data |
+|  **Platform Reallocator** | Generates optimal swap plans with ranked reasoning | Constraint solving + LLM reasoning |
+|  **Multilingual Alerts** | PA announcements in Hindi, Marathi, Telugu + 8 more languages | Google Translate + Twilio |
 
 ### Why This Is Genuinely Agentic
 
@@ -47,7 +47,7 @@ The station master sees a plan and accepts or overrides it. **That's autonomy.**
 
 ---
 
-## 🎬 Demo Scenarios
+##  Demo Scenarios
 
 ### Demo 1: Single Train Delay
 Click "Fire Delay: Deccan Express +47 min" → Watch the AI agent detect the cascade, propose a platform swap (Platform 2 → 5), generate a Hindi announcement, and log the decision.
@@ -100,7 +100,7 @@ Respond only in JSON format:
 
 ---
 
-## 🚀 Running Locally
+##  Running Locally
 
 ### Option A: Just open index.html
 The frontend is a single HTML file with no dependencies. Open `index.html` in any browser. The AI features require the Anthropic API key (automatically handled in the deployed version).
@@ -123,7 +123,7 @@ open index.html
 
 ---
 
-## 📊 Impact Numbers
+##  Impact Numbers
 
 - **90 seconds** — delay detection to recovery plan (vs 18–30 min manual)
 - **₹18,000 Crore** — annual railway delay cost addressable
@@ -133,7 +133,7 @@ open index.html
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 | Phase | Timeline | Milestone |
 |---|---|---|
@@ -144,7 +144,7 @@ open index.html
 
 ---
 
-## 👥 Team
+##  Team
 
 Built for FAR AWAY — India's Biggest International Hackathon 2026.
 
