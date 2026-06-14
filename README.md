@@ -263,4 +263,22 @@ RailSaarthi is designed to be deployable — not just demonstrable. The architec
 
 ---
 
+##  A Note on Current Data
+
+The railway data used in this build — train numbers, platform assignments, delay timings, passenger counts — is **simulated for demonstration purposes**. We're actively working on integrating real operational data sources and will be updating this soon. The architecture is designed to plug real data right in with minimal changes.
+
+---
+
+##  Where We're Headed
+
+Right now we're submitting from Vadodara, running on way too much chai ☕ and a shared conviction that we built something genuinely different here.
+
+**Next stop: Delhi 🇮🇳** — We're looking forward to presenting RailSaarthi in person at the next round and showing what this system can really do when it's live in front of an audience.
+
+**And then, fingers crossed — Japan 🇯🇵** — Because bringing an Indian Railways intelligence system to the country that invented the Shinkansen would honestly be the most full-circle moment we could ask for. We're not taking it for granted, but we're absolutely building toward it.
+
+One round at a time. Let's go. 🚀
+
+---
+
 *Team Elaris · FAR AWAY 2026 · Parul University, Vadodara*
