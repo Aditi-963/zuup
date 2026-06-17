@@ -271,7 +271,7 @@ The railway data used in this build — train numbers, platform assignments, del
 
 ##  Where We're Headed
 
-Right now we're submitting from Vadodara, running on way too much chai ☕ and a shared conviction that we built something genuinely different here.
+Right now we're submitting from Vadodara, running on way too much chai and a shared conviction that we built something genuinely different here.
 
 **Next stop: Delhi 🇮🇳** — We're looking forward to presenting RailSaarthi in person at the next round and showing what this system can really do when it's live in front of an audience.
 
