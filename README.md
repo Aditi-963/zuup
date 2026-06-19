@@ -10,7 +10,7 @@
 
 RailSaarthi is an autonomous AI-powered operational intelligence system for modern railway infrastructure. It acts as a real-time co-pilot for station masters and operational control rooms — enabling faster, safer, and smarter decisions during disruptions like train delays, platform conflicts, crowd congestion, and emergencies.
 
-Unlike traditional railway software that simply displays information, RailSaarthi **actively detects disruptions, predicts cascading failures, recommends recovery strategies, generates multilingual announcements, and coordinates staff responses — all within 90 seconds.**
+Unlike your traditional railway software that simply displays information, RailSaarthi **actively detects disruptions, predicts cascading failures, recommends recovery strategies, generates multilingual announcements, and coordinates staff responses — all within 90 seconds.**
 
 > **RailSaarthi is not a passenger app.**
 > It is infrastructure intelligence software for one of the world's largest transportation systems.
