@@ -114,7 +114,7 @@ Decision logged in audit system
 
 ##  Key Features
 
-- **Real-Time Operations Dashboard** — Monitor active trains, live delays, platform status, and station alerts
+- **Real-Time Operation Dashboard** — Monitor active trains, live delays, platform status, and station alerts
 - **Delay Cascade Detector** — Automatically surfaces all trains affected by a single disruption
 - **Platform Optimization Engine** — AI-recommended reallocation to minimize delay propagation and passenger impact
 - **Multilingual Announcement Generator** — Passenger announcements in English, Hindi, Marathi, Tamil, Gujarati, and Telugu
