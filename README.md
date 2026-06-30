@@ -247,7 +247,7 @@ Built by five engineering students from **Parul University, Vadodara**, who appr
 | **Pranjal Gupta** | AI Engineering Lead | Simulation engine, delay detection logic, cascade analysis, decision pipeline |
 | **Vaidehi Wate** | Frontend Engineering Lead · UI/UX | Next.js application, dashboard design, component system, Framer Motion animations |
 | **Hiranya Raut** | Backend Systems Engineer | FastAPI architecture, REST APIs, database schema, JWT authentication |
-| **Katyayni Sharma** | Research Engineer · Documentation Lead | Railway domain research, competitor analysis, IoT roadmap, hardware architecture planning |
+| **Katyayni** | Research Engineer · Documentation Lead | Railway domain research, competitor analysis, IoT roadmap, hardware architecture planning |
 
 ---
 
